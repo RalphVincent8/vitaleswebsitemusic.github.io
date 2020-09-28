@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Me</title>
+	<link rel="stylesheet" type="text/css" href="about.css">
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+</head>
+<body>
+<div class="main">
+<div class="banner">
+
+	<img class="mySlides" src="3.jpeg" style="width:1120px">
+	<img class="mySlides" src="4.jpeg" style="width:1120px">
+	<img class="mySlides" src="6.jpg" style="width:1120px">
+	<img class="mySlides" src="10.jpg" style="width:1120px">
+	<img class="mySlides" src="5.jpg" style="width:1120px">
+	<img class="mySlides" src="2.jpg" style="width:1120px">
+
+	<div>
+		<script>
+		var slideIndex = 0;
+		carousel();
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for(i = 0; i < x.length; i++){
+			x[i].style.display = "none";
+		}
+		slideIndex++;
+		if(slideIndex > x.length) {slideIndex = 1} 
+		x[slideIndex-1].style.display = "block";
+		setTimeout(carousel,2000);
+		}
+		</script>
+		</div>
+
+		<div class="navbar">
+		<div class="navbar2"><br>
+			<font size="2"><a href="home.html" class="smooth">HOME<a/></font>
+			<font size="2"><a href="about.html" class="smooth" id="active1">ABOUT</a></font>
+			<font size="2"><a href="myvideos.html" class="smooth">MY VIDEOS<a/></font>
+			<font size="2"><a href="testimonials.html" class="smooth">TESTIMONIAL<a/></font>
+			<font size="2"><a href="awards.html" class="smooth">AWARDS<a/></font>
+			<font size="2"><a href="contact.html" class="smooth">CONTACTS<a/></font>
+		</div>
+		</div>
+		<div class="content">
+		<div align="center">
+		<div class="background">
+
+		<font face="" size="5" color="silver">
+		<pre class="sing">
+		<p>
+I'm RALPH VINCENT VITALES, from Philippines!
+<br>
+I love music, it can normalized my moods and gives me confidence.
+<br>
+Without music, my life would be a mistake.
+<br>
+<br>
+Just like what Dimebag Darrell said,
+<br>
+<br>
+Music drives you. It wakes you up, it gets you pumping.<br>
+And, at the end of the day, the correct tune will chill you down.”<br>
+ - Dimebag Darrell	
+		</p>
+		</pre>
+		
+		</div>
+		</div>
+		</div>
+
+		<div class="footer">
+		<div class="bbackground">
+		<font face="courier" color="#cococo" size="3">
+		<i class="far fa-copyright"></i> Copyright - Alrights Reserved!
+		<font face="courier" color="red" size="5">|
+		</font><font color="#cococo"> 2020-2021
+		</font>
+		</div>
+
+</body>
+</html>

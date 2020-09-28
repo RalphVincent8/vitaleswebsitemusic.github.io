@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Awards</title>
+		<link rel="stylesheet" type="text/css" href="awards.css">
+</head>
+<body>
+	<div class="main">
+<div class="banner">
+
+<img class="mySlides" src="1.jpeg" style="width:1120px">
+<img class="mySlides" src="11.jpg" style="width:1120px">
+<img class="mySlides" src="10.jpg" style="width:1120px">
+<img class="mySlides" src="3.jpeg" style="width:1120px">
+<img class="mySlides" src="6.jpg" style="width:1120px">
+
+
+		<script>
+		var slideIndex = 0;
+		carousel();
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for(i = 0; i < x.length; i++){
+			x[i].style.display = "none";
+		}
+		slideIndex++;
+		if(slideIndex > x.length) {slideIndex = 1} 
+		x[slideIndex-1].style.display = "block";
+		setTimeout(carousel,2000);
+		}
+		</script>
+
+</div>
+		
+		<div class="navbar">
+		<div class="navbar2"><br>
+			<font size="2"><a href="home.html" class="smooth">HOME<a/></font>
+			<font size="2"><a href="about.html" class="smooth">ABOUT<a/></font>
+			<font size="2"><a href="myvideos.html" class="smooth">MY VIDEOS<a/></font>
+			<font size="2"><a href="testimonials.html" class="smooth">TESTIMONIAL<a/></font>
+			<font size="2"><a href="awards.html" class="smooth" id="active1">AWARDS<a/></font>
+			<font size="2"><a href="contact.html" class="smooth">CONTACTS<a/></font>
+		</div>
+		</div>
+		<div class="content">
+		<div align="center">
+		<div class="background">
+			<br>
+			<br>
+
+			<center>
+			<table style="width:90%">
+			<tr>
+			<th>
+				<img src="awards/award1.jpg" width="400" height="300">    		
+			</th>
+ 			<th>
+				<img src="awards/award2.jpg" width="400" height="300"> 
+    		</th>
+    		</tr>
+    		<tr>
+    		<th>
+				<img src="awards/award3.jpg" width="400" height="300"> 
+    		</th>
+    		<th>
+				<img src="awards/award4.jpg" width="400" height="300"> 
+    		</th>
+    		</tr>
+    		</table>
+    		</center>
+
+		</div>
+		</div>
+		</div>
+
+		<div class="footer">
+		<div class="bbackground">
+		<font face="courier" color="#cococo" size="3">
+		<i class="far fa-copyright"></i> Copyright - Alrights Reserved!
+		<font face="courier" color="red" size="5">|
+		</font><font color="#cococo"> 2020-2021
+		</font>
+		</div>
+
+</body>
+</html>
